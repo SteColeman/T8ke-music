@@ -74,6 +74,10 @@ ul li a {
   text-align: center;
 }
 
+#twitterContainerDesktop {
+  display: none;
+}
+
 @media screen and (min-width: 900px) {
   header {
     padding: 1rem 1rem 0;
@@ -124,4 +128,12 @@ ul li a {
     cursor: pointer;
     background-color: #D3D3D3;
   }
+
+  #twitterContainerMobile {
+    display: none;
+  }
+  #twitterContainerDesktop {
+    display: block;
+  }
+
 }
