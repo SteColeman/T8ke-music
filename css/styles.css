@@ -1,0 +1,127 @@
+header {
+  background-color: #696969;
+  margin: 0.7rem;
+  padding: 0.7rem 0.7rem 0 0.7rem;
+}
+
+body {
+  background-color: black;
+  color: #dadada;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #dadada;
+}
+
+ul li a {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+#t8ke-logo {
+  max-width: 15rem;
+  height: auto;
+}
+
+.logoBackground {
+  width: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.mainNav li {
+  text-align: center;
+  margin: 15px auto;
+  font-size: 16px;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 165px;
+  right: 30px;
+  cursor: pointer;
+  background-image: rgba(255, 255, 255, 0.8);
+  font-size: 24px;
+}
+
+.socialIcon {
+  max-width: 2rem;
+  align-items: right;
+}
+
+.socialMedia {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 0;
+}
+
+#instaContainer {
+  width: 60%;
+  margin: auto;
+}
+
+#twitterContainer, #instaContainer {
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
+  header {
+    padding: 1rem 1rem 0;
+  }
+
+  #t8ke-logo {
+    max-width: 25rem;
+    height: auto;
+  }
+
+  .socialMedia {
+    text-align: right;
+    position: relative;
+    top: -3rem;
+    right: 1rem;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .mainNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+
+  ul {
+    width: 80%;
+    margin: auto;
+  }
+
+  .mainNav li {
+    flex: 1 1 0px; /*setting all the nav li elements to be the same size*/
+    height: 100%;
+    margin: 0;
+  }
+
+  ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: 1rem 0;
+  }
+
+  ul li a:hover {
+    cursor: pointer;
+    background-color: #D3D3D3;
+  }
+}
