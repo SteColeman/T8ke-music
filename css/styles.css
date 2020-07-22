@@ -42,9 +42,10 @@ ul li a {
 
 .mainNav li {
   text-align: center;
-  margin: 15px auto;
+  padding: 0 0 15px;
   font-size: 16px;
 }
+
 
 .navbar-toggle {
   position: absolute;
@@ -79,6 +80,16 @@ ul li a {
   display: none;
 }
 
+footer {
+  position: absolute;
+  bottom: 0.2rem;
+  left: 0;
+  right: 0;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
 @media screen and (min-width: 900px) {
   header {
     padding: 1rem 1rem 0;
@@ -100,7 +111,7 @@ ul li a {
     display: none;
   }
 
-  .mainNav {
+  #jsMenu {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

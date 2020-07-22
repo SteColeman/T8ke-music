@@ -1,11 +1,6 @@
-var navToggle = document.getElementById("jsNavBarToggle");
+var navTog = $("#jsNavBarToggle");
+var navMenu = $("#navItems");
 
-var navList = document.getElementById("jsMenu");
-
-navToggle.addEventListener("click", navShowHide);
-
-
-function navShowHide() {
-  navList.classList.toggle("hidden");
-
-}
+$(navTog).click(function(){
+  $(navMenu).slideToggle();
+});
