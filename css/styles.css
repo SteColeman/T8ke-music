@@ -46,7 +46,6 @@ ul li a {
   font-size: 16px;
 }
 
-
 .navbar-toggle {
   position: absolute;
   top: 165px;
@@ -74,6 +73,7 @@ ul li a {
 
 #twitterContainerMobile, #instaContainer {
   text-align: center;
+  margin-top: 4rem;
 }
 
 #twitterContainerDesktop {
@@ -81,15 +81,35 @@ ul li a {
 }
 
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0.2rem;
-  left: 0;
-  right: 0;
-    margin-left: auto;
-    margin-right:auto;
 }
 
+/*Shop Page*/
+.shopContainer {
+  width: 80%;
+  margin: auto;
+}
 
+.shopImg {
+  margin: 0.5rem;
+}
+
+.shopImg img {
+  max-width: 300px;
+}
+
+/* tablet size screens 700px & larger*/
+@media screen and (min-width: 700px) {
+
+  /*shop page*/
+  .shopContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/*desktop size screens, 900px or larger*/
 @media screen and (min-width: 900px) {
   header {
     padding: 1rem 1rem 0;
@@ -111,11 +131,15 @@ footer {
     display: none;
   }
 
-  #jsMenu {
+  #navItems {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-top: -3.2rem;
+  }
+
+  .mainNav li {
+    padding-bottom: 0;
   }
 
   ul {
@@ -124,7 +148,8 @@ footer {
   }
 
   .mainNav li {
-    flex: 1 1 0px; /*setting all the nav li elements to be the same size*/
+    flex: 1 1 0px;
+    /*setting all the nav li elements to be the same size*/
     height: 100%;
     margin: 0;
   }
@@ -144,9 +169,19 @@ footer {
   #twitterContainerMobile {
     display: none;
   }
+
   #twitterContainerDesktop {
     display: block;
     text-align: center;
   }
 
+  /*shop page*/
+  .shopContainer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .shopImg:hover {
+  background-color: grey;
+  transition: background-color .5s;
+  }
 }
